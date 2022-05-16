@@ -1,0 +1,64 @@
+:root {
+    --rose : #DB24CE;
+    --vert : #CEDB24;
+    --bleu : #24CEDB;
+}
+
+
+* {
+    margin : 0;
+    padding : 0;
+    outline : 0;
+    border : 0;
+    border-spacing : 0;
+    box-sizing : border-box; 
+    background-color: var(--bleu);
+}
+
+table {
+    margin : 5vh auto 0;
+    box-shadow : 0 0 100vh var(--vert);
+}
+
+td {
+    border-right : 1px solid var(--bleu);
+}
+
+td:nth-child(1) {
+    border-left : 1px solid var(--bleu);
+}
+
+tr {
+    border-bottom : 1px solid var(--bleu);
+    display : block;
+}
+
+tr:nth-of-type(3),  tr:nth-of-type(6){
+    border-bottom : 4px solid var(--bleu);
+}
+
+td:nth-of-type(3),  td:nth-of-type(6){
+    border-right : 4px solid var(--bleu);
+}
+
+input {
+    height : calc(100vh / 10);
+    width : calc(100vh / 10);
+    background-color : white;
+    /* border : 1px solid #DDD; */
+    font-size : 7vh;
+    text-align : align;
+    appearance : textfield;
+}
+
+input:invalid, .error {
+    border : 1px solid red;
+    background-color: rgb(227, 155, 155);
+}
+
+button {
+    display : block;
+    margin : 1em auto 1em;
+    padding: .5em 2em;
+    font-size : 3vh;
+}
